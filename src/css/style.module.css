@@ -1,0 +1,148 @@
+:root {
+    --font-main: 'Montserrat', sans-serif;
+
+    --color-accent: #fb6d3a;
+    --color-body: #f5f7fa;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-title: #000000;
+    --color-backgroud: #ffffff;
+    --color-text: #595959;
+    --color-linck: #565e6a;
+    --color-background-sidebar: #1e2939;
+    --color-work-experience: #a8a8a8;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--color-body);
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    background-color: var(--color-backgroud);
+    margin: 40px auto;
+    box-shadow: 6px 6px 20px var(--color-shadow);
+}
+
+/* sidebar section */
+
+.sidebarSection {
+    background-color: var(--color-background-sidebar);
+    width: 370px;
+    padding: 40px 0;
+}
+
+.contactsSection,
+.softSkillsSection,
+.techSkillsSection {
+    margin: 50px 0 0 40px;
+}
+
+.sidebarTitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--color-backgroud);
+    margin-bottom: 10px;
+}
+
+/* contacts section*/
+
+.contactsSectionType {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-backgroud);
+    margin-right: 7px;
+}
+
+.contactsSectionLink {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-linck);
+}
+
+.contactsSectionLink:hover,
+.contactsSectionLink:focus {
+    color: var(--color-backgroud);
+}
+
+.contactsSectionIco {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contactsSectionSoclal {
+    display: flex;
+    /* align-items: center; */
+}
+
+.contactsSectionItem {
+    list-style: none;
+}
+
+.contactsSectionSoclal li+li {
+    margin-left: 20px;
+}
+
+/* tech skills section */
+
+.techSkillsList {
+    padding: 0 0 0 17px;
+}
+
+.techSkillsItem {
+    color: var(--color-accent);
+}
+
+.techSkillsItemText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-backgroud);
+}
+
+/* soft skills section */
+
+.softSkillsList {
+    padding: 0 0 0 17px;
+}
+
+.softSkillsItem {
+    color: var(--color-accent);
+}
+
+.softSkillsItemText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-backgroud);
+}
+
+/* // ********************** */
+.mainContantSection {
+    position: relative;
+}
+
+
+
+@media print {
+
+    .userProfileLang {
+        display: none;
+    }
+}
+
+#BrowserPrintDefaults {
+    display: none
+}
+

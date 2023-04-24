@@ -1,0 +1,70 @@
+:root {
+    --font-main: 'Montserrat', sans-serif;
+
+    --color-accent: #fb6d3a;
+    --color-body: #f5f7fa;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-title: #000000;
+    --color-backgroud: #ffffff;
+    --color-text: #595959;
+    --color-linck: #565e6a;
+    --color-background-sidebar: #1e2939;
+    --color-work-experience: #a8a8a8;
+}
+
+/* about me section */
+
+.aboutMeSection {
+    margin: 0 0 40px 0;
+}
+
+.aboutMeProfession {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.25;
+    color: var(--color-title);
+    margin: 0 0 20px 0;
+}
+
+.aboutMeName {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    color: var(--color-title);
+    margin: 0 0 25px 0;
+}
+
+.aboutMeDescription {
+    /* width: 735px; */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-text);
+}
+
+@media print {
+    .aboutMeSection {
+        margin: 0 0 20px 0;
+    }
+
+    .myEducationSection {
+        margin: 20px 0 0 0;
+    }
+
+    .userProfileLang {
+        display: none;
+    }
+
+    .aboutMeDescription {
+        color: var(--color-title);
+    }
+
+    .aboutMeDescription {
+
+        line-height: 1.25;
+
+    }
+}

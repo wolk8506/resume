@@ -1,0 +1,107 @@
+:root {
+    --font-main: 'Montserrat', sans-serif;
+
+    --color-accent: #fb6d3a;
+    --color-body: #f5f7fa;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+    --color-title: #000000;
+    --color-backgroud: #ffffff;
+    --color-text: #595959;
+    --color-linck: #565e6a;
+    --color-background-sidebar: #1e2939;
+    --color-work-experience: #a8a8a8;
+}
+
+/* education section */
+
+
+
+.myEducationUniversity {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-accent);
+    margin: 0 0 7px 0;
+}
+
+.myEducationSpecialization {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--color-title);
+    margin: 0;
+    /* margin: 0 0 7px 0; */
+}
+
+.myWorkExperiencePeriod {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-work-experience);
+    margin: 0 0 10px 0;
+}
+
+.myWorkExperienceDivider {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--color-title);
+}
+
+.mainContentTitle {
+    display: flex;
+    align-items: flex-start;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--color-title);
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.mainContentTitle svg {
+    margin-right: 10px;
+}
+
+.myEducationSection {
+    margin: 40px 0 0 0;
+}
+
+.myEducation{
+    display: flex;
+    margin: 0 0 7px 0;
+}
+
+.certificate{
+    margin: 0;
+    margin-left: 20px;
+    font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: var(--color-title);
+        
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+
+@media print {
+
+    .myEducationSection{
+        margin: 20px 0 0 0;
+    }
+    .myWorkExperiencePeriod {
+        color: var(--color-title);
+    }
+    
+    .myEducationUniversity {
+        color: var(--color-title);
+    }
+}
