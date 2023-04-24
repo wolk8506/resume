@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/resume/static/css/main.f72a9fbd.css",
+    "main.js": "/resume/static/js/main.70d4ebfb.js",
+    "static/media/Screenshot_5.jpg": "/resume/static/media/Screenshot_5.9086231f9ca28f53ec65.jpg",
+    "static/media/Screenshot_6.jpg": "/resume/static/media/Screenshot_6.194d5d9e577c089a43bb.jpg",
+    "static/media/Screenshot_2.jpg": "/resume/static/media/Screenshot_2.3e6b56450692acfce88c.jpg",
+    "static/media/Screenshot_3.jpg": "/resume/static/media/Screenshot_3.95d22477080b0d928cdb.jpg",
+    "static/media/Screenshot_8.jpg": "/resume/static/media/Screenshot_8.2dbcd83032472a3f61ff.jpg",
+    "static/media/Screenshot_4.jpg": "/resume/static/media/Screenshot_4.03a87b96c37149a4d323.jpg",
+    "static/media/Screenshot_9.png": "/resume/static/media/Screenshot_9.af3e0d08573db2257fbb.png",
+    "static/media/Screenshot_7.jpg": "/resume/static/media/Screenshot_7.c3e1276eedb1ca7ced38.jpg",
+    "static/media/photo.jpg": "/resume/static/media/photo.1d037751b9eb23a4411b.jpg",
+    "index.html": "/resume/index.html",
+    "main.f72a9fbd.css.map": "/resume/static/css/main.f72a9fbd.css.map",
+    "main.70d4ebfb.js.map": "/resume/static/js/main.70d4ebfb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f72a9fbd.css",
+    "static/js/main.70d4ebfb.js"
+  ]
+}
