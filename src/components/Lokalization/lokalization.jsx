@@ -107,6 +107,33 @@ export const langPage = [
     еducation: 'Education', //? не изменяется
     university: [
       {
+        // ? #3 место учебы
+
+        universityName: 'Stepik',
+        specialization: 'The universe of testing, or how to become a tester.',
+        certificate: {
+          isVisible: true,
+          name: 'Certificate',
+          link: 'https://drive.google.com/file/d/1OGlHg_HLcBDAqrpbQxme0yWxFfEoPijp/view?usp=sharing',
+        },
+        еducationTime: 'July 2023',
+        еducationPeriod: '1 month',
+      },
+      {
+        // ? #2 место учебы
+
+        universityName: 'IT School GoIT (Kyiv)',
+        specialization: 'Frontend Full Stack Online.',
+        certificate: {
+          isVisible: true,
+          name: 'Certificate',
+          link: 'https://drive.google.com/file/d/15muKH3ciQCZ0pOPEv6c0w4V1Gk8VonAj/view?usp=sharing',
+        },
+        еducationTime: 'September 2021 - October 2022',
+        еducationPeriod: '1 year 2 months',
+      },
+
+      {
         // ? #1 место учебы
 
         universityName:
@@ -120,32 +147,6 @@ export const langPage = [
         },
         еducationTime: 'September 2003 - June 2008',
         еducationPeriod: '5 years',
-      },
-      {
-        // ? #2 место учебы
-
-        universityName: 'GoIT',
-        specialization: 'Frontend Full Stack Online.',
-        certificate: {
-          isVisible: true,
-          name: 'Certificate',
-          link: 'https://drive.google.com/file/d/15muKH3ciQCZ0pOPEv6c0w4V1Gk8VonAj/view?usp=sharing',
-        },
-        еducationTime: 'September 2021 - October 2022',
-        еducationPeriod: '1 year 2 months',
-      },
-      {
-        // ? #3 место учебы
-
-        universityName: 'Stepik',
-        specialization: 'The universe of testing, or how to become a tester.',
-        certificate: {
-          isVisible: true,
-          name: 'Certificate',
-          link: 'https://drive.google.com/file/d/1OGlHg_HLcBDAqrpbQxme0yWxFfEoPijp/view?usp=sharing',
-        },
-        еducationTime: 'July 2023',
-        еducationPeriod: '1 month',
       },
     ],
 
@@ -161,14 +162,16 @@ export const langPage = [
 
     techSkillsTitle: 'Tech Skills', //? не изменяется
     techSkills: [
-      'HTML5',
-      'CSS3',
+      'HTML5 / CSS3 / SASS',
       'GIT',
       'JavaScript',
       'React',
       'Node.js',
+      'MongoDB',
       'Figma',
-      'Jira, Kiwi',
+      'Jira',
+      'Kiwi TCMS',
+      'Swagger',
       'Postman',
       'Python',
     ],
@@ -282,6 +285,32 @@ export const langPage = [
     еducation: 'Образование', //? не изменяется
     university: [
       {
+        // ? #3 место учебы
+
+        universityName: 'Stepik',
+        specialization: 'Вселенная тестирования, или Как стать тестировщиком.',
+        certificate: {
+          isVisible: true,
+          name: 'Сертификат',
+          link: 'https://drive.google.com/file/d/1OGlHg_HLcBDAqrpbQxme0yWxFfEoPijp/view?usp=sharing',
+        },
+        еducationTime: 'Июль 2023',
+        еducationPeriod: '1 месяц',
+      },
+      {
+        // ? #2 место учебы
+
+        universityName: 'IT School GoIT (Kyiv)',
+        specialization: 'Frontend Full Stack Online.',
+        certificate: {
+          isVisible: true,
+          name: 'Сертификат',
+          link: 'https://drive.google.com/file/d/15muKH3ciQCZ0pOPEv6c0w4V1Gk8VonAj/view?usp=sharing',
+        },
+        еducationTime: 'Сентябрь 2021 - Октябрь 2022',
+        еducationPeriod: '1 год 2 месяца',
+      },
+      {
         // ? #1 место учебы
 
         universityName:
@@ -296,32 +325,6 @@ export const langPage = [
         еducationTime: 'Сентябрь 2003 - Июнь 2008',
         еducationPeriod: '5 лет',
       },
-      {
-        // ? #2 место учебы
-
-        universityName: 'GoIT',
-        specialization: 'Frontend Full Stack Online.',
-        certificate: {
-          isVisible: true,
-          name: 'Сертификат',
-          link: 'https://drive.google.com/file/d/15muKH3ciQCZ0pOPEv6c0w4V1Gk8VonAj/view?usp=sharing',
-        },
-        еducationTime: 'Сентябрь 2021 - Октябрь 2022',
-        еducationPeriod: '1 год 2 месяца',
-      },
-      {
-        // ? #3 место учебы
-
-        universityName: 'Stepik',
-        specialization: 'Вселенная тестирования, или Как стать тестировщиком.',
-        certificate: {
-          isVisible: true,
-          name: 'Сертификат',
-          link: 'https://drive.google.com/file/d/1OGlHg_HLcBDAqrpbQxme0yWxFfEoPijp/view?usp=sharing',
-        },
-        еducationTime: 'Июль 2023',
-        еducationPeriod: '1 месяц',
-      },
     ],
 
     // ***************         S I D E B A R          ***************
@@ -335,14 +338,16 @@ export const langPage = [
     },
     techSkillsTitle: 'Технические навыки', //? не изменяется
     techSkills: [
-      'HTML5',
-      'CSS3',
+      'HTML5 / CSS3 / SASS',
       'GIT',
       'JavaScript',
       'React',
       'Node.js',
+      'MongoDB',
       'Figma',
-      'Jira, Kiwi',
+      'Jira',
+      'Kiwi TCMS',
+      'Swagger',
       'Postman',
       'Python',
     ],
@@ -460,6 +465,32 @@ export const langPage = [
     еducation: 'Освіта', //? не изменяется
     university: [
       {
+        // ? #3 место учебы
+
+        universityName: 'Stepik',
+        specialization: 'Всесвіт тестування, або Як стати тестувальником.',
+        certificate: {
+          isVisible: true,
+          name: 'Сертифікат',
+          link: 'https://drive.google.com/file/d/1OGlHg_HLcBDAqrpbQxme0yWxFfEoPijp/view?usp=sharing',
+        },
+        еducationTime: 'Липень 2023',
+        еducationPeriod: '1 місяць',
+      },
+      {
+        // ? #2 место учебы
+
+        universityName: 'IT School GoIT (Kyiv)',
+        specialization: 'Frontend Full Stack Online.',
+        certificate: {
+          isVisible: true,
+          name: 'Сертифікат',
+          link: 'https://drive.google.com/file/d/15muKH3ciQCZ0pOPEv6c0w4V1Gk8VonAj/view?usp=sharing',
+        },
+        еducationTime: 'Вересень 2021 - Жовтень 2022',
+        еducationPeriod: '1 рік 2 місяці',
+      },
+      {
         // ? #1 место учебы
 
         universityName:
@@ -474,32 +505,6 @@ export const langPage = [
         еducationTime: 'Вересень 2003 - Червень 2008',
         еducationPeriod: '5 років',
       },
-      {
-        // ? #2 место учебы
-
-        universityName: 'GoIT',
-        specialization: 'Frontend Full Stack Online.',
-        certificate: {
-          isVisible: true,
-          name: 'Сертифікат',
-          link: 'https://drive.google.com/file/d/15muKH3ciQCZ0pOPEv6c0w4V1Gk8VonAj/view?usp=sharing',
-        },
-        еducationTime: 'Вересень 2021 - Жовтень 2022',
-        еducationPeriod: '1 рік 2 місяці',
-      },
-      {
-        // ? #3 место учебы
-
-        universityName: 'Stepik',
-        specialization: 'Всесвіт тестування, або Як стати тестувальником.',
-        certificate: {
-          isVisible: true,
-          name: 'Сертифікат',
-          link: 'https://drive.google.com/file/d/1OGlHg_HLcBDAqrpbQxme0yWxFfEoPijp/view?usp=sharing',
-        },
-        еducationTime: 'Липень 2023',
-        еducationPeriod: '1 місяць',
-      },
     ],
 
     // ***************         S I D E B A R          ***************
@@ -513,14 +518,16 @@ export const langPage = [
     },
     techSkillsTitle: 'Технічні навички', //? не изменяется
     techSkills: [
-      'HTML5',
-      'CSS3',
+      'HTML5 / CSS3 / SASS',
       'GIT',
       'JavaScript',
       'React',
       'Node.js',
+      'MongoDB',
       'Figma',
-      'Jira, Kiwi',
+      'Jira',
+      'Kiwi TCMS',
+      'Swagger',
       'Postman',
       'Python',
     ],

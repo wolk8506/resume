@@ -13,29 +13,41 @@ export const Projects = () => {
 
   const projects = data.map(i => (
     <li key={i.name} className={s.projectsItem}>
-      <span className={s.myProjectsText}>
-        <Tooltip
-          title={
-            <a href={i.link} rel="noopener noreferrer" target="_blank">
-              <img src={i.img} alt="projects_1" width="200" height="160" />
+      <div>
+        <span className={s.myProjectsText}>
+          <Tooltip
+            title={
+              <a href={i.link} rel="noopener noreferrer" target="_blank">
+                <img src={i.img} alt="projects_1" width="200" height="160" />
+              </a>
+            }
+            placement="right"
+          >
+            <a
+              href={i.link}
+              className={s.myProjectsLink}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {i.name} <span>{i.nameRole}</span>
             </a>
-          }
-          placement="right"
-        >
+          </Tooltip>
           <a
-            href={i.link}
-            className={s.myProjectsLink}
+            href={i.linkGit}
+            className={s.myProjectsLinkGit}
             rel="noopener noreferrer"
             target="_blank"
           >
-            {i.name}
+            <span className={s.myProjectsBracket}>[</span>GitHub
+            <span className={s.myProjectsBracket}>]</span>
           </a>
-        </Tooltip>
-        <span className={s.myProjectsBracketLine}></span>
-        <span className={s.myProjectsBracket}>[</span>
-        <span className={s.myProjectsTechnology}> {i.technology}</span>
-        <span className={s.myProjectsBracket}>]</span>
-      </span>
+          <span className={s.myProjectsBracketLine}></span>
+          <span className={s.myProjectsBracket}>[</span>
+          <span className={s.myProjectsTechnology}> {i.technology}</span>
+          <span className={s.myProjectsBracket}>]</span>
+        </span>
+      </div>
+      {i.isVisibleSummary && <p className={s.summary}>{i.summary[value]}</p>}
     </li>
   ));
 
@@ -46,7 +58,7 @@ export const Projects = () => {
           <DesignServicesIcon />
           {lang.projects}
         </h2>
-        <ol className={s.myProjectsList}>{projects}</ol>
+        <ul className={s.myProjectsList}>{projects}</ul>
       </div>
     </>
   );

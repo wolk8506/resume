@@ -22,6 +22,7 @@
 
 .myProjectsText {
     display: flex;
+    align-items: center;
     justify-content: space-around;
     font-style: normal;
     font-weight: normal;
@@ -41,7 +42,7 @@
     font-weight: bold;
 }
 
-.myProjectsLink {
+.myProjectsLink, .myProjectsLinkGit {
     flex-shrink: 0;
     font-style: normal;
     font-weight: normal;
@@ -50,8 +51,16 @@
     color: var(--color-text);
     text-decoration: none;
 }
-.myProjectsLink:hover, .myProjectsLink:focus{
+.myProjectsLink:hover, 
+.myProjectsLink:focus, 
+.myProjectsLinkGit:hover, 
+.myProjectsLinkGit:focus{
     color: var(--color-hover);
+}
+
+.myProjectsLinkGit{
+    margin-left: 20px;
+    cursor: pointer;
 }
 
 .myProjectsBracket {
@@ -89,8 +98,23 @@
 .mainContentTitle svg {
     margin-right: 10px;
 }
+ .summary{
+    font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: var(--color-work-experience);
+        margin: 0 0 0px 0;
+ }
 
+ .myProjectsLink span{
+    display: none;
+ }
 
+ /* li div{
+    display: flex;
+    align-items: center;
+ } */
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
@@ -100,16 +124,31 @@
 @media print {
 
     .myProjectsSection {
-            margin: 0 0 20px 0;
-            padding-right: 20px;
-        }
+        margin: 0 0 20px 0;
+        padding-right: 20px;
+    }
 
-.myProjectsLink,
+    .myProjectsLink,
     .projectsItem,
     .myProjectsTechnology,
     .myProjectsBracket {
-
         line-height: 1.25;
-
     }
+
+        .summary {
+        color: var(--color-title);
+        }
+
+    /* .summary {
+        display: none;
+    } */
+
+    .myProjectsLink span {
+        display: inline;
+    }
+
+
+        .myProjectsLink span {
+            display: none;
+        }
 }
