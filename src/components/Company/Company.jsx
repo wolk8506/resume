@@ -1,8 +1,8 @@
-import { langPage } from '../Lokalization/lokalization';
-import s from '../../css/Company.module.css';
-import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import { useSelector } from 'react-redux';
 import { getContacts } from '../../redux/contacts/contacts-selectors';
+import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
+import { langPage } from '../Lokalization/lokalization';
+import s from '../../css/Company.module.css';
 
 export const Company = () => {
   const value = useSelector(getContacts);

@@ -1,45 +1,46 @@
-import { langPage } from '../components/Lokalization/lokalization';
+import { useSelector } from 'react-redux';
+import { getContacts } from '../redux/contacts/contacts-selectors';
+import Tooltip from '@mui/material/Tooltip';
+import CallIcon from '@mui/icons-material/Call';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import photo from '../img/photo.jpg';
 import { IconSkype } from '../img';
 import { UkraineFlag } from '../img';
-import CallIcon from '@mui/icons-material/Call';
-import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import TelegramIcon from '@mui/icons-material/Telegram';
-import Tooltip from '@mui/material/Tooltip';
-import { useSelector } from 'react-redux';
-import { getContacts } from '../redux/contacts/contacts-selectors';
+import { langPage } from '../components/Lokalization/lokalization';
+import s from '../css/sidebar.module.css';
 
 export const Sidebar = () => {
   const value = useSelector(getContacts);
   const lang = langPage[value];
 
   const techSkills = lang.techSkills.map(i => (
-    <li key={i} className="tech-skills-item">
-      <span className="tech-skills-item-text">{i}</span>
+    <li key={i} className={s.item}>
+      <span className={s.itemText}>{i}</span>
     </li>
   ));
 
   const softSkills = lang.softSkills.map(i => (
-    <li key={i} className="soft-skills-item">
-      <span className="soft-skills-item-text">{i}</span>
+    <li key={i} className={s.item}>
+      <span className={s.itemText}>{i}</span>
     </li>
   ));
 
   const languages = lang.languages.map(i => (
-    <li key={i} className="tech-skills-item">
-      <span className="tech-skills-item-text">{i}</span>
+    <li key={i} className={s.item}>
+      <span className={s.itemText}>{i}</span>
     </li>
   ));
 
   return (
     <>
-      <aside className="sidebar-section">
-        <div className="blokPhoto">
+      <aside className={s.sidebarSection}>
+        <div className={s.blokPhoto}>
           <img
-            className="photo"
+            className={s.photo}
             src={photo}
             alt="My_photo"
             width="370"
@@ -48,54 +49,54 @@ export const Sidebar = () => {
         </div>
 
         {/* <!-- Contacts section --> */}
-        <div className="contacts-section">
-          <h2 className="sidebar-title">{lang.contacts}</h2>
+        <div className={s.skillsSection}>
+          <h2 className={s.sidebarTitle}>{lang.contacts}</h2>
 
           {lang.contact[0].isVisible && (
-            <div>
+            <div className={s.contactItem}>
               <a
-                className="contacts-section-link"
+                className={s.contactsSectionLink}
                 href={`tel:${lang.contact[0].link.split(' ').join('')}`}
               >
-                <CallIcon className="contact-icon" /> {lang.contact[0].link}
+                <CallIcon className={s.contactIcon} /> {lang.contact[0].link}
               </a>
             </div>
           )}
 
           {lang.contact[1].isVisible && (
-            <div>
+            <div className={s.contactItem}>
               <a
-                className="contacts-section-link"
+                className={s.contactsSectionLink}
                 href={`mailto:${lang.contact[1].link}`}
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <MailOutlineIcon className="contact-icon" />
+                <MailOutlineIcon className={s.contactIcon} />
                 {lang.contact[1].link}
               </a>
             </div>
           )}
 
           {lang.contact[2].isVisible && (
-            <div>
+            <div className={s.contactItem}>
               <a
-                className="contacts-section-link"
+                className={s.contactsSectionLink}
                 href={`https://${lang.contact[2].link}`}
                 rel="noopener noreferrer"
                 target="_blank"
                 aria-label={`https://${lang.contact[2].link}`}
               >
                 <Tooltip title="Linkedin" placement="bottom">
-                  <LinkedInIcon className="contact-icon" />
+                  <LinkedInIcon className={s.contactIcon} />
                 </Tooltip>
                 Linkedin
               </a>
             </div>
           )}
           {lang.contact[3].isVisible && (
-            <div className="contacts-section-item">
+            <div className={s.contactItem}>
               <a
-                className="contacts-section-link"
+                className={s.contactsSectionLink}
                 href={`https://${lang.contact[3].link}`}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -105,7 +106,7 @@ export const Sidebar = () => {
                   title={`https://${lang.contact[3].link}`}
                   placement="bottom"
                 >
-                  <GitHubIcon className="contact-icon" />
+                  <GitHubIcon className={s.contactIcon} />
                 </Tooltip>
                 GitHub
               </a>
@@ -113,9 +114,9 @@ export const Sidebar = () => {
           )}
 
           {lang.contact[4].isVisible && (
-            <div className="contacts-section-item">
+            <div className={s.contactItem}>
               <a
-                className="contacts-section-link"
+                className={s.contactsSectionLink}
                 href={`https://${lang.contact[4].link}`}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -125,16 +126,16 @@ export const Sidebar = () => {
                   title={`https://${lang.contact[4].link}`}
                   placement="bottom"
                 >
-                  <TelegramIcon className="contact-icon" />
+                  <TelegramIcon className={s.contactIcon} />
                 </Tooltip>
                 Telegram
               </a>
             </div>
           )}
           {lang.contact[5].isVisible && (
-            <div className="contacts-section-item">
+            <div className={s.contactItem}>
               <a
-                className="contacts-section-link"
+                className={s.contactsSectionLink}
                 href={`https://${lang.contact[5].link}`}
                 rel="noopener noreferrer"
                 target="_blank"
@@ -144,7 +145,7 @@ export const Sidebar = () => {
                   title={`https://${lang.contact[5].link}`}
                   placement="bottom"
                 >
-                  <div className="icon-container contact-icon-skype">
+                  <div className={s.contactIconSkype}>
                     <IconSkype />
                   </div>
                 </Tooltip>
@@ -153,16 +154,16 @@ export const Sidebar = () => {
             </div>
           )}
           {lang.location.isVisible && (
-            <div className="contacts-section-item">
+            <div className={s.contactItem}>
               <a
-                className="contacts-section-link"
+                className={s.contactsSectionLink}
                 href={lang.location.link}
                 rel="noopener noreferrer"
                 target="_blank"
                 aria-label="skype"
               >
                 <Tooltip title={lang.location.city} placement="bottom">
-                  <div className="icon-container contact-icon">
+                  <div className={s.iconContainer}>
                     <LocationOnIcon />
                   </div>
                 </Tooltip>
@@ -173,21 +174,20 @@ export const Sidebar = () => {
           )}
         </div>
         {/* //  Tech skills section */}
-        <div className="skills">
-          <div className="tech-skills-section">
-            <h2 className="sidebar-title">{lang.techSkillsTitle}</h2>
-            <ul className="tech-skills-list">{techSkills}</ul>
-          </div>
-          {/* <!-- Soft skills section --> */}
-          <div className="soft-skills-section">
-            <h2 className="sidebar-title">{lang.softSkillsTitle}</h2>
-            <ul className="soft-skills-list">{softSkills}</ul>
-          </div>
-          {/* <!-- Languages --> */}
-          <div className="tech-skills-section">
-            <h2 className="sidebar-title">{lang.languagesTitle}</h2>
-            <ul className="tech-skills-list">{languages}</ul>
-          </div>
+
+        <div className={s.skillsSection}>
+          <h2 className={s.sidebarTitle}>{lang.techSkillsTitle}</h2>
+          <ul className={s.skillsList}>{techSkills}</ul>
+        </div>
+        {/* <!-- Soft skills section --> */}
+        <div className={s.skillsSection}>
+          <h2 className={s.sidebarTitle}>{lang.softSkillsTitle}</h2>
+          <ul className={s.skillsList}>{softSkills}</ul>
+        </div>
+        {/* <!-- Languages --> */}
+        <div className={s.skillsSection}>
+          <h2 className={s.sidebarTitle}>{lang.languagesTitle}</h2>
+          <ul className={s.skillsList}>{languages}</ul>
         </div>
       </aside>
     </>

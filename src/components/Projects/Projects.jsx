@@ -1,11 +1,11 @@
 import React from 'react';
-import { Tooltip } from '@mui/material';
-import { langPage } from '../Lokalization/lokalization';
-import s from '../../css/Projects.module.css';
-import { data } from './data';
 import { useSelector } from 'react-redux';
 import { getContacts } from '../../redux/contacts/contacts-selectors';
+import { Tooltip } from '@mui/material';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
+import { langPage } from '../Lokalization/lokalization';
+import { data } from './data';
+import s from '../../css/Projects.module.css';
 
 export const Projects = () => {
   const value = useSelector(getContacts);

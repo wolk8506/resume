@@ -1,21 +1,6 @@
-:root {
-    --font-main: 'Montserrat', sans-serif;
-
-    --color-accent: #fb6d3a;
-    --color-body: #f5f7fa;
-    --color-shadow: rgba(0, 0, 0, 0.1);
-    --color-title: #000000;
-    --color-backgroud: #ffffff;
-    --color-text: #595959;
-    --color-linck: #565e6a;
-    --color-background-sidebar: #1e2939;
-    --color-work-experience: #a8a8a8;
-}
-
 /* main content section  */
 
 .mainContantSection {
-    /* padding: 50px 50px; */
     padding-top: 40px;
     padding-right: 120px;
     padding-bottom: 50px;
@@ -23,52 +8,4 @@
 
     position: relative;
 
-}
-
-.userProfileLang {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    color: var(--color-linck);
-}
-
-
-
-.mainContentTitle {
-    display: flex;
-    align-items: flex-start;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 27px;
-    color: var(--color-title);
-    margin-bottom: 10px;
-}
-
-.mainContentTitle svg{
-    margin-right: 10px;
-}
-
-.myEducationSection {
-    margin: 40px 0 0 0;
-}
-
-@media print {
-    .aboutMeSection {
-            margin: 0 0 20px 0;
-        }
-    .myEducationSection {
-            margin: 20px 0 0 0;
-        }
-    .userProfileLang {
-        display: none;
-    }
-    .aboutMeDescription{
-        color:var(--color-title);
-    }
-        .aboutMeDescription {
-           
-            line-height: 1.25;
-            
-        }
 }

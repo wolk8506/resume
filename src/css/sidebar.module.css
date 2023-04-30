@@ -1,0 +1,102 @@
+/* sidebar section */
+
+.sidebarSection {
+    background-color: var(--color-background-sidebar);
+    width: 370px;
+    padding: 40px 0;
+    flex-shrink: 0;
+}
+
+
+.skillsSection {
+    margin: 50px 0 0 40px;
+}
+
+.skillsSection .contactItem+.contactItem {
+    margin-top: 5px;
+}
+
+.sidebarTitle {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    color: var(--color-backgroud);
+    margin-bottom: 10px;
+}
+
+/* contacts section*/
+
+.iconContainer {
+    display: flex;
+    align-items: center;
+}
+
+.contactIconSkype {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+    fill: currentColor;
+
+}
+
+.contactsSectionLink svg {
+    margin-right: 7px;
+}
+
+.contactsSectionLink {
+    display: flex;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-backgroud);
+    text-decoration: none;
+}
+
+.contactsSectionLink:hover,
+.contactsSectionLink:focus {
+    color: var(--color-hover);
+}
+
+.skillsList {
+    padding: 0 0 0 17px;
+}
+
+.item {
+    color: var(--color-accent);
+}
+
+.itemText {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-backgroud);
+}
+
+.blokPhoto {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: 20px;
+    width: 330px;
+    height: 326px;
+}
+
+.photo {
+    transition: 1s;
+    display: block;
+    border-radius: 50%;
+    width: 330px;
+    height: 326px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+
+}

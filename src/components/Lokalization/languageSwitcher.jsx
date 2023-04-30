@@ -1,17 +1,15 @@
+import { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getContacts } from '../../redux/contacts/contacts-selectors';
+import actions from '../../redux/contacts/contacts-actions';
+import { Tooltip } from '@mui/material';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import { Tooltip } from '@mui/material';
-import { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import actions from '../../redux/contacts/contacts-actions';
-import { getContacts } from '../../redux/contacts/contacts-selectors';
-
-import s from '../../css/resume.module.css';
+import s from '../../css/Lokalization.module.css';
 
 export const LanguageSwitcher = () => {
   const value2 = useSelector(getContacts);
-
   const dispatch = useDispatch();
   const [value, setValue] = useState(value2);
 
@@ -24,6 +22,7 @@ export const LanguageSwitcher = () => {
       })
     );
   };
+
   return (
     <>
       <Tooltip title="Language" placement="top">

@@ -1,4 +1,3 @@
-// import projects_1 from '../../img/Screenshot_1.jpg';
 import projects_2 from '../../img/Screenshot_2.jpg';
 import projects_3 from '../../img/Screenshot_3.jpg';
 import projects_4 from '../../img/Screenshot_4.jpg';

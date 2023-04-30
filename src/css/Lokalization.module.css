@@ -1,0 +1,15 @@
+.userProfileLang {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: var(--color-linck);
+}
+
+/* !!!!!    P R I N T   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media print {
+
+    .userProfileLang {
+        display: none;
+    }
+}

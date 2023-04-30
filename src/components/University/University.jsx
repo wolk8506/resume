@@ -1,12 +1,13 @@
-import { langPage } from '../Lokalization/lokalization';
-import s from '../../css/University.module.css';
 import { useSelector } from 'react-redux';
 import { getContacts } from '../../redux/contacts/contacts-selectors';
 import SchoolIcon from '@mui/icons-material/School';
+import { langPage } from '../Lokalization/lokalization';
+import s from '../../css/University.module.css';
 
 export const University = () => {
   const value = useSelector(getContacts);
   const lang = langPage[value];
+
   const tag = lang.university.map(i => (
     <div key={i.еducationPeriod}>
       <h3 className={s.myEducationUniversity}>{i.universityName}</h3>

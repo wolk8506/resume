@@ -1,5 +1,4 @@
 import { dataWork } from './dateWork';
-// !!! УСТАНОВИТЬ ДАТУ НАЧАЛА ПЕРИДА ТЕКУЩЕЙ РАБОТЫ В ДОКУМЕНТУ dateWork.jsx
 const PROFESSION = 1; //? 0 = developer 1 = QA engineer
 const contact = [
   { isVisible: true, link: '+380 68 890 66 98' }, //format number +380 99 111 22 33
@@ -77,7 +76,7 @@ export const langPage = [
       // ? #2 место работы
       {
         lebensstellung: 'Electronic engineer',
-        arbeitsplatz: 'LLC “Market Service”/LLC “Libra TK”',
+        arbeitsplatz: 'LLC “Market Service” / LLC “Libra TK”',
         time: 'September 2014 – September 2019',
         time2: '5 years',
         slils: [

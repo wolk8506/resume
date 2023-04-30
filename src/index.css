@@ -14,9 +14,7 @@ code {
     monospace;
 }
 
-
-/* *************** */
-/* *************** */
+/* *****  variable  ********** */
 
 :root {
   --font-main: 'Montserrat', sans-serif;
@@ -47,165 +45,7 @@ body {
   box-shadow: 6px 6px 20px var(--color-shadow);
 }
 
-/* sidebar section */
-
-.sidebar-section {
-  background-color: var(--color-background-sidebar);
-  width: 370px;
-  padding: 40px 0;
-  flex-shrink: 0;
-}
-
-.contacts-section,
-.soft-skills-section,
-.tech-skills-section {
-  margin: 50px 0 0 40px;
-}
-
-.contacts-section div+div{
-  margin-top: 5px;
-
-}
-
-.sidebar-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 27px;
-  color: var(--color-backgroud);
-  margin-bottom: 10px;
-}
-
-/* contacts section*/
-
-.icon-container{
-  display: flex;
-  align-items: center;
-}
-
-.contact-icon{
-  margin-right: 7px;
-}
-
-.contacts-section-type {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--color-backgroud);
-  margin-right: 7px;
-}
-
-.contacts-section-link {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--color-backgroud);
-  text-decoration:none;
-}
-
-.contacts-section-link:hover,
-.contacts-section-link:focus {
-  color: var(--color-hover);
-}
-
-.contacts-section-ico {
-  /* margin-right: 10px; */
-  fill: currentColor;
-}
-
-.contacts-section-soclal {
-  display: flex;
-  align-items: center;
-}
-
-.contacts-section-item {
-  list-style: none;
-}
-
-.contacts-section-soclal li+li {
-  margin-left: 20px;
-}
-
-/* tech skills section */
-
-.tech-skills-list {
-  padding: 0 0 0 17px;
-}
-
-.tech-skills-item {
-  color: var(--color-accent);
-}
-
-.tech-skills-item-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--color-backgroud);
-}
-
-/* soft skills section */
-
-.soft-skills-list {
-  padding: 0 0 0 17px;
-}
-
-.soft-skills-item {
-  color: var(--color-accent);
-}
-
-.soft-skills-item-text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--color-backgroud);
-}
-
-.iconFlag{
-  margin-right: 5px;
-}
-
-
-.contact-icon-skype{
-  margin-right: 12px;
-}
-
-.blokPhoto{
-  display: inline-block;
-  overflow: hidden;
-   
-
-  border-radius: 50%;
-  margin-left: 20px;
-  width: 330px;
-  height: 326px;
-}
-
-.photo{
-  transition: 1s;
-  display: block;
-
-  border-radius: 50%;
-
-  width: 330px;
-  height: 326px;
-
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
-      rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
-      rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-.photo:hover{
-transform: scale(1.05);
-
-}
-
-
-/* // ********************** */
+/* !!!!!    P R I N T   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 #BrowserPrintDefaults {
   display: none
@@ -213,8 +53,6 @@ transform: scale(1.05);
 
 @media print {
   .main-container {
-      
-      margin: 0px auto;
-      
-    }
+    margin: 0px auto;
+  }
 }
